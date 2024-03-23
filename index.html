@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Use our free and easy-to-use currency converter to calculate live currency and foreign exchange rates. Whether it's for business, travel, or just curiosity, get accurate and up-to-date rates instantly." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <meta name="description" content="Join the Trivia Challenge! Test your knowledge, explore various categories, and climb the leaderboard. Are you up for the challenge?">
+    <!-- Additional meta tags for SEO & social sharing -->
+    <meta property="og:title" content="Trivia Challenge!">
+    <meta property="og:description" content="Join the Trivia Challenge! Test your knowledge across diverse topics. Start your quiz journey today!">
+    <meta property="og:type" content="website">
 
-    <title>Quick Currency Converter</title>
-    <!-- Google Fonts -->
-    <link
-   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-    <!-- Stylesheet-->
- <style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Rubik+Broken+Fax&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+
+    
+
+    
+
+
+
+    <!-- Material-UI styles -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/system@5.0.1/dist/mui.min.css" integrity="sha384-GLhlTQ8iKSeUcycr6i3AxSsLOp/5StETHxHjOVq9XuWqIbbVZNyQOdX+yG5bwDciF" crossorigin="anonymous">
+
+
+
+  
+
+
+
+  <!-- Include Material-UI styles and icons -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.0.1/dist/material-design-icons/iconfont/material-icons.css"
+
+    integrity="sha384-rGi1CEVZxh5F2neuJb3Nm4MEWxh1OrlCcFCi5TjW60RPI+EBo3MBukk1MTtPHtah" crossorigin="anonymous">
+
+    
+    <style>
+
+
+
     body {
 
             font-family: 'Roboto', sans-serif;
 
-            margin: 0 0px;
+            margin: 65px 10px 10px;
 
-            padding: 70px 15px 10px;
+            padding: 0px;
 
             background-color: #446FAA1A;
 
         }
+
+
+
     #navbar {
 
       position: fixed;
@@ -42,6 +83,9 @@
       z-index: 3;
 
     }
+
+
+
     #menuToggle {
 
       cursor: pointer;
@@ -55,6 +99,9 @@
       box-sizing: content-box;
 
     }
+
+
+
     #menuIcon {
 
       font-size: 24px;
@@ -62,11 +109,17 @@
       color: #1976D2;
 
     }
+
+
+
     #menuIcon.close {
 
       transform: rotate(180deg);
 
     }
+
+
+
     #menuOverlay {
 
       position: fixed;
@@ -231,101 +284,62 @@
 
     }
 
+        
   </style>
-<style>
-* {
-  
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  outline: none;
-}
+
+
+
+
+    <style>
 body {
-  background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
-.wrapper {
-  width: 90%;
-  max-width: 25em;
-  background-color: #ffffff;
-  position: absolute;
-  transform: translate(-50%,0);
-  left: 50%;
-  margin:0px 0 0px;
-  padding: 2em;
-  border-radius: 0.8em;
-}
-.app-details {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.app-title {
-  font-size: 1.6em;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-}
+
 label {
-  display: block;
-  font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-input#amount {
-  font-weight: 400;
-  font-size: 1.2em;
-  display: block;
-  width: 100%;
-  border-bottom: 2px solid #02002c;
-  color: #7a789d;
-  margin-bottom: 2em;
-  padding: 0.5em;
-}
-input#amount:focus {
-  color: #9873fe;
-  border-color: #9873fe;
-}
-.dropdowns {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1em;
-}
+
+input[type="number"],
 select {
-  width: 100%;
-  padding: 0.6em;
-  font-size: 1em;
-  border-radius: 0.2em;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 50%, center;
-  background-size: 20px 20px;
-  background-color: #4950cc;
-  color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Added this to include padding in the element's total width and height */
 }
-select option {
-  background-color: #ffffff;
-  color: #02002c;
-}
+
 button {
-  font-size: 1em;
-  width: 100%;
-  background-color: #4950cc;
-  padding: 1em 0;
-  margin-top: 2em;
-  border-radius: 0.3em;
-  color: #ffffff;
-  font-weight: 600;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
-#result {
-  font-size: 1.2em;
-  text-align: center;
-  margin-top: 1em;
-  color: #02002c;
-  background-color: #e5dbff;
-  padding: 0.8em 0;
+
+#setup-panel, #quiz-container, #results {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
-#intro-outline {
+
+#answer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#answer-list li {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+        #intro-outline {
     border: 2px solid #007bff; /* Adjust color as needed */
     padding: 20px;
     border-radius: 8px;
@@ -342,10 +356,10 @@ p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-</style>
-  </head>
-  <body>
 
+</style>
+</head>
+<body>
 
   <div id="navbar">
 
@@ -365,25 +379,37 @@ p {
 
   </div>
 
+
+
+
+
+
+
+
+
+
+
 <div id="intro-outline">
-    <h2>Quick Currency Converter</h2>
-    <p>Easily convert currencies in seconds. Ideal for travel and finance, offering real-time rates for global currencies. Fast, accurate, and user-friendly.</p>
+    <h2>Welcome to Trivia Challenge!</h2>
+    <p>Test your knowledge across a wide range of topics and see how much you really know. Ready to challenge yourself?</p>
 </div>
-    <div class="wrapper">
-      <div class="app-details">
-       
-        <h1 class="app-title">Quick Currency Converter</h1>
-      </div>
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" value="1" />
-      <div class="dropdowns">
-        <select id="from-currency-select"></select>
-        <select id="to-currency-select"></select>
-      </div>
-      <button id="convert-button">Convert</button>
-      <p id="result"></p>
-    </div>
-<script>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
 
   const currentPageLocation = window.location.href;
 
@@ -524,243 +550,155 @@ p {
   }
 
 </script>
-    <!-- Scipt With Array Of Supported Country Codes -->
-    <script>
-currencies = [
-  "AED",
-  "AFN",
-  "ALL",
-  "AMD",
-  "ANG",
-  "AOA",
-  "ARS",
-  "AUD",
-  "AWG",
-  "AZN",
-  "BAM",
-  "BBD",
-  "BDT",
-  "BGN",
-  "BHD",
-  "BIF",
-  "BMD",
-  "BND",
-  "BOB",
-  "BRL",
-  "BSD",
-  "BTC",
-  "BTN",
-  "BWP",
-  "BYN",
-  "BZD",
-  "CAD",
-  "CDF",
-  "CHF",
-  "CLF",
-  "CLP",
-  "CNY",
-  "COP",
-  "CRC",
-  "CUC",
-  "CUP",
-  "CVE",
-  "CZK",
-  "DJF",
-  "DKK",
-  "DOP",
-  "DZD",
-  "EGP",
-  "ERN",
-  "ETB",
-  "EUR",
-  "FJD",
-  "FKP",
-  "GBP",
-  "GEL",
-  "GGP",
-  "GHS",
-  "GIP",
-  "GMD",
-  "GNF",
-  "GTQ",
-  "GYD",
-  "HKD",
-  "HNL",
-  "HRK",
-  "HTG",
-  "HUF",
-  "IDR",
-  "ILS",
-  "IMP",
-  "INR",
-  "IQD",
-  "IRR",
-  "ISK",
-  "JEP",
-  "JMD",
-  "JOD",
-  "JPY",
-  "KES",
-  "KGS",
-  "KHR",
-  "KMF",
-  "KPW",
-  "KRW",
-  "KWD",
-  "KYD",
-  "KZT",
-  "LAK",
-  "LBP",
-  "LKR",
-  "LRD",
-  "LSL",
-  "LYD",
-  "MAD",
-  "MDL",
-  "MGA",
-  "MKD",
-  "MMK",
-  "MNT",
-  "MOP",
-  "MRO",
-  "MRU",
-  "MUR",
-  "MVR",
-  "MWK",
-  "MXN",
-  "MYR",
-  "MZN",
-  "NAD",
-  "NGN",
-  "NIO",
-  "NOK",
-  "NPR",
-  "NZD",
-  "OMR",
-  "PAB",
-  "PEN",
-  "PGK",
-  "PHP",
-  "PKR",
-  "PLN",
-  "PYG",
-  "QAR",
-  "RON",
-  "RSD",
-  "RUB",
-  "RWF",
-  "SAR",
-  "SBD",
-  "SCR",
-  "SDG",
-  "SEK",
-  "SGD",
-  "SHP",
-  "SLL",
-  "SOS",
-  "SRD",
-  "SSP",
-  "STD",
-  "STN",
-  "SVC",
-  "SYP",
-  "SZL",
-  "THB",
-  "TJS",
-  "TMT",
-  "TND",
-  "TOP",
-  "TRY",
-  "TTD",
-  "TWD",
-  "TZS",
-  "UAH",
-  "UGX",
-  "USD",
-  "UYU",
-  "UZS",
-  "VEF",
-  "VES",
-  "VND",
-  "VUV",
-  "WST",
-  "XAF",
-  "XAG",
-  "XAU",
-  "XCD",
-  "XDR",
-  "XOF",
-  "XPD",
-  "XPF",
-  "XPT",
-  "YER",
-  "ZAR",
-  "ZMW",
-  "ZWL",
-];
+
+
+
+    
+<div id="setup-panel">
+    <form id="quiz-setup">
+        <div>
+            <label for="number-of-questions">Number of Questions:</label>
+            <input type="number" id="number-of-questions" name="amount" min="1" max="50" value="10">
+        </div>
+        <div>
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="10">Entertainment: Books</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="13">Entertainment: Musicals & Theatres</option>
+                <option value="14">Entertainment: Television</option>
+                <option value="15">Entertainment: Video Games</option>
+                <option value="16">Entertainment: Board Games</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Science: Computers</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Vehicles</option>
+                <option value="29">Entertainment: Comics</option>
+                <option value="30">Science: Gadgets</option>
+                <option value="31">Entertainment: Japanese Anime & Manga</option>
+                <option value="32">Entertainment: Cartoon & Animations</option>
+            </select>
+        </div>
+        <div>
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">Select Type:</label>
+            <select id="type" name="type">
+                <option value="">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+        </div>
+        <button type="submit">Start Quiz</button>
+    </form>
+</div>
+
+<div id="quiz-container" style="display: none;">
+    <div id="question"></div>
+    <ul id="answer-list"></ul>
+    <button id="next-question" style="display: none;">Next Question</button>
+</div>
+
+<div id="results" style="display: none;">
+    Your score: <span id="score"></span> / <span id="total-questions"></span>
+</div>
+
+<script>
+let currentQuestionIndex = 0;
+let score = 0;
+let questions = [];
+
+function fetchQuestionsWithPreferences() {
+    const form = document.getElementById('quiz-setup');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const queryParams = new URLSearchParams(formData).toString();
+        
+        const apiUrlWithPrefs = `https://opentdb.com/api.php?${queryParams}`;
+
+        fetch(apiUrlWithPrefs)
+            .then(response => response.json())
+            .then(data => {
+                questions = data.results;
+                displayQuestion();
+                document.getElementById('setup-panel').style.display = 'none';
+                document.getElementById('quiz-container').style.display = 'block';
+            });
+    });
+}
+
+function displayQuestion() {
+    const questionElement = document.getElementById('question');
+    const answerListElement = document.getElementById('answer-list');
+    const nextQuestionButton = document.getElementById('next-question');
+
+    if (currentQuestionIndex < questions.length) {
+        const currentQuestion = questions[currentQuestionIndex];
+        questionElement.innerHTML = currentQuestion.question;
+        answerListElement.innerHTML = '';
+
+        const answers = [currentQuestion.correct_answer, ...currentQuestion.incorrect_answers];
+        shuffleArray(answers);
+
+        answers.forEach(answer => {
+            const li = document.createElement('li');
+            li.innerHTML = answer;
+            li.addEventListener('click', () => checkAnswer(answer, currentQuestion.correct_answer));
+            answerListElement.appendChild(li);
+        });
+
+        nextQuestionButton.style.display = 'none';
+    } else {
+        displayResults();
+    }
+}
+
+function checkAnswer(selectedAnswer, correctAnswer) {
+    const nextQuestionButton = document.getElementById('next-question');
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+    currentQuestionIndex++;
+    nextQuestionButton.style.display = 'block';
+}
+
+function displayResults() {
+    document.getElementById('quiz-container').style.display = 'none';
+    document.getElementById('score').textContent = score;
+    document.getElementById('total-questions').textContent = questions.length;
+    document.getElementById('results').style.display = 'block';
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+document.getElementById('next-question').addEventListener('click', displayQuestion);
+fetchQuestionsWithPreferences();
 
 </script>
-    <!-- Script with API Key -->
-    <script>
-const fromDropDown = document.getElementById("from-currency-select");
-const toDropDown = document.getElementById("to-currency-select");
-
-//Create dropdown from the currencies array
-currencies.forEach((currency) => {
-  const option = document.createElement("option");
-  option.value = currency;
-  option.text = currency;
-  fromDropDown.add(option);
-});
-
-//Repeat same thing for the other dropdown
-currencies.forEach((currency) => {
-  const option = document.createElement("option");
-  option.value = currency;
-  option.text = currency;
-  toDropDown.add(option);
-});
-
-//Setting default values
-fromDropDown.value = "USD";
-toDropDown.value = "EGP";
-
-
-// تحديث الدالة convertCurrency لاستخدام API الجديدة
-let convertCurrency = async () => {
-  const amount = document.querySelector("#amount").value;
-  const fromCurrency = fromDropDown.value;
-  const toCurrency = toDropDown.value;
-
-  // تحديث الرابط ليعكس العملات المختارة والكمية
-  const url = `https://currency-exchange.p.rapidapi.com/exchange?from=${fromCurrency}&to=${toCurrency}&q=${amount}`;
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'f6d359abd9msh0d72112f80f8236p1cdd07jsncc0c270b44c5',
-      'X-RapidAPI-Host': 'currency-exchange.p.rapidapi.com'
-    }
-  };
-
-  // إذا كانت خانة الكمية ليست فارغة
-  if (amount.length != 0) {
-    try {
-      const response = await fetch(url, options);
-      const resultData = await response.text(); // الحصول على النتيجة كنص
-      const convertedAmount = parseFloat(resultData) * amount; // تحويل النتيجة إلى عدد وضربها بالكمية للحصول على القيمة النهائية
-      // عرض النتيجة
-      document.getElementById("result").innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
-    } catch (error) {
-      console.error(error);
-    }
-  } else {
-    alert("Please fill in the amount");
-  }
-};
-
-document.querySelector("#convert-button").addEventListener("click", convertCurrency);
-window.addEventListener("load", convertCurrency);
-</script>
-
-  </body>
-    </html>
+</body>
+  </html>
