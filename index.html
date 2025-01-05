@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -291,9 +292,6 @@
 
 
     <style>
-body {
-    font-family: Arial, sans-serif;
-}
 
 label {
     display: block;
@@ -327,34 +325,100 @@ button {
     border: 1px solid #ddd;
 }
 
-#answer-list {
-    list-style-type: none;
-    padding: 0;
-}
 
-#answer-list li {
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
 
         #intro-outline {
     border: 2px solid #007bff; /* Adjust color as needed */
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Creates space between this outline and the next content block */
+    margin: 70px 20px 20px; /* Creates space between this outline and the next content block */
 }
 
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
 p {
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#setup-panel {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+input[type="number"],
+select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#quiz-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#answer-list li {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f7f9fc;
+    transition: background-color 0.3s;
+}
+
+#answer-list li:hover {
+    background-color: #e6f0ff;
+}
+
+#results {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
 }
 
 </style>
@@ -701,4 +765,4 @@ fetchQuestionsWithPreferences();
 
 </script>
 </body>
-  </html>
+    </html>
